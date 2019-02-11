@@ -1,0 +1,13 @@
+spring:
+   application:
+      name: user-service-ribbon
+server:
+   port: 10000
+hello-service-ribbon:
+   ribbon:
+      eureka:
+         enabled: false
+      listOfServers: localhost:9092, localhost:8090, localhost:9999
+      #Refresh server setiap 1,5 detik sekali
+      ServerListRefreshInterval: 15000
+         

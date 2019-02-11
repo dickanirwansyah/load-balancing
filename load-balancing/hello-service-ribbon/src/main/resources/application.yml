@@ -1,0 +1,8 @@
+spring:
+   application:
+      name: hello-service-ribbon
+server:
+   port: 8090
+#buat cluster hello-service-ribbon dengan port berikut :
+#port : 9092
+#port : 9999
